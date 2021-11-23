@@ -1,0 +1,32 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+    
+    <h3>Add A Product</h3>
+    
+    <form action="/products/add" method="POST">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" class="form-control rounded-0 bg-dark text-white" placeholder="Name of Product" id="name">
+    </div>
+    
+    <div>   
+        <label for="brand">Brand:</label>
+        <input type="text" name="brand" class="form-control rounded-0 bg-dark text-white" placeholder="Brand of Product" id="brand">
+    </div>
+
+    <div>
+        <label for="price">Price:</label>
+        <input type="number" name="price" class="form-control rounded-0 bg-dark text-white" placeholder="Price of product" id="price">
+    </div>
+
+    <div>
+        <label for="pieces">Pieces:</label>
+        <input type="number" name="pieces" placeholder="Pieces of product" class="form-control rounded-0 bg-dark text-white" id="pieces">
+    </div>
+
+    <div>
+        <label for="img">URL: </label>
+        <input type="text" name="img" placeholder="Image of Product" id="img" class="form-control rounded-0 bg-dark text-white">
+    </div>
+    <button class="btn btn-primary btn-sm mt-2">Save</button>
+    </form>
+</div>

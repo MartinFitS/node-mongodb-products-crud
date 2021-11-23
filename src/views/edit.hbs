@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card card-body bg-dark p-4 text-white">
+                <h1 >Update A Product</h1>
+            <form action="/products/{{product._id}}/edit" method="POST">
+
+                <div class="mb-3">
+                    <input  class="form-control rounded-0 bg-dark text-white" type="text" name="name" placeholder="Name of Product" value="{{product.name}}">
+                </div>
+                
+                <div class="mb-3">
+                    <input type="text" name="brand"  class="form-control rounded-0 bg-dark text-white" placeholder="Brand of Product" value="{{product.brand}}">
+                </div>
+                <div class="mb-3">
+                    <input type="number" name="price" placeholder="Price of product" class="form-control rounded-0 bg-dark text-white" value="{{product.price}}">
+                </div>
+                
+                <div class="mb-3">
+                    <input type="number" name="pieces" placeholder="Pieces of product" class="form-control rounded-0 bg-dark text-white" value="{{product.pieces}}">
+                </div>
+                
+                <div class="mb-3">
+                    <input type="text" name="img" placeholder="Image of Product" class="form-control rounded-0 bg-dark text-white" value="{{product.img}}">
+                </div>
+
+                <button class="btn btn-primary btn-sm mt-2">Save</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
